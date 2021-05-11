@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 设置视口大小 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性盒</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul {
+            width: 400px;
+            height: 400px;
+            border: 10px red solid;
+            /* 设置为弹性容器 */
+            display: flex;
+            /* 设置弹性容器中弹性元素是否自动换行 */
+            flex-wrap: nowrap;
+            /* 设置弹性容器中元素的排列方向 */
+            /* 主轴：元素的排列方向 */
+            /* 侧轴：与主轴垂直 */
+
+            /* flex-direction: center; */
+            /* flex-flow: wrap direction属性的简写 */
+
+            /* 设置如何分配主轴上的空间 */
+            /* 元素沿主轴开始排列，其他值：flex-end，center，space-around（空白分布到两侧），space-evenly:空白分布到元素单侧，space-between */
+            justify-content: center; 
+            /* 设置 元素在侧轴上的对齐方式, 属性值如justify-content */
+            align-items: center;
+        }
+        li {
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            font-size: 50px;
+            text-align: center;
+            /* 设置弹性元素的伸展系数，按照比列进行分配， 为0时不伸展 */
+            /* flex-grow: 1; */
+            /* 设置弹性元素的收缩系数，当父元素不足以容纳所有子元素时对子元素进行收缩，为0时不收缩 */
+            /* flex-shrink: 1; */
+        }
+        li:nth-child(2) {
+            background-color: pink;
+        }
+        li:nth-child(3) {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex：弹性盒、伸缩盒，布局手段，主要用于代替浮动完成布局 -->
+    <!-- 
+        弹性容器
+        - 使用弹性盒：将元素设置为弹性容器，方法：display
+        - display: flex 块级弹性容器
+        - display: inline-flex 行内弹性容器
+     -->
+     <!-- 
+         弹性元素
+         - 弹性容器的子元素称为弹性元素（弹性项）
+      -->
+    <ul>
+        <li>1</li>
+       
+    </ul>
+</body>
+</html>

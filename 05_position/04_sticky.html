@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粘滞定位</title>
+    <link rel="stylesheet" href="../02CSS/reset.css">
+    <style>
+        body {
+            height: 3000px;
+        }
+        div {
+            width: 1208px;
+            height: 48px;
+            margin: 110px auto;
+            background-color: #E8E7E3;
+            /* 
+                粘滞定位：position: sticky
+                    - 基本和相对定位特点一致
+                    - 不同的是粘滞定位可以在元素达到某个位置时使其固定
+                    - 兼容性不好
+             */
+            position: sticky;
+            top: 30px;
+        }
+        
+        li {
+            float: left;
+            
+        }
+        li a {
+            display: block;
+            color: gray;
+            font-size: 17px;
+            font-weight: 200;
+            height: 48px; 
+            padding: 14px 44px;
+        }
+        li a:hover {
+            color: #D7D6D2;
+            background-color: #3F3F3F;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="">HTML/CSS</a></li>
+            <li><a href="">Browser Side</a></li>
+            <li><a href="">Server Side</a></li>
+            <li><a href="">Programming</a></li>
+            <li><a href="">XML</a></li>
+            <li><a href="">Web Building</a></li>
+            <li><a href="">Reference</a></li>
+        </ul>
+    </div>
+</body>
+</html>

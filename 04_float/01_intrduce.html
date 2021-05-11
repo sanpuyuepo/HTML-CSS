@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动简介</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            /* 
+                float 设置元素的浮动
+                -可选值：
+                    - none 默认值，不浮动
+                    - left 元素向左浮动
+                    - right 元素向右浮动
+                - 设置浮动后水平布局的等式不需要强制成立
+                - 元素设置浮动后会完全从文档流中脱离，不再占用文档流位置
+                  所以元素下边的还在文档流中的元素会自动向上移动
+                - 设置浮动后元素会向父元素左侧或右侧移动
+                - 浮动元素默认不会从父元素溢出
+                - 浮动元素浮动时不会超过它前边的其他浮动元素 
+             */
+            float: left;
+        }
+    
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            float: left;
+        }
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+</body>
+</html>

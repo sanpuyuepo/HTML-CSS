@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            /* 指定字体名字 */
+            font-family: 'myFont';
+            /* 指定服务器字体路径 */
+            src: url(./font/Slidefu-Regular-2.ttf);
+        }
+        div {
+            margin-bottom: 20px;
+            width: 500px;
+            border: red 1px solid;
+            /* 
+                text-align 文本水平对齐
+                    - left 左对齐
+                    - right 右对齐
+                    - center 居中对齐
+                    - justify 两端对齐
+            */
+            text-align:left;
+        }
+        span {
+            font-size: 50px;
+            border: 1px solid burlywood;
+            /* 
+                vertical-align 垂直对齐
+                    - baseline 默认值，基线对齐
+                    - top 顶部对齐
+                    - bottom 底部对齐
+                    - middle 居中对齐
+            */
+            vertical-align: middle;
+        }
+        .box1 {
+            border: none;
+            font-size: 50px;
+            font-family: 'myFont';
+            /* 
+                text-decoration 文本修饰
+                    - none
+                    - underline 下划线
+                    - line-through 删除线
+                    - overline 上划线
+                可设置线的样式
+            */
+            text-decoration: underline red dotted;
+        }
+        .box2 {
+            border: none;
+            /* 
+                white-space 设置网页如何处理空白
+                - normal 正常
+                - nowrap 不换行
+                - pre 保留空白
+            */
+            white-space: nowrap;
+            overflow: hidden;
+            /* 溢出内容设置省略号，white-space, overflow, text-overflow 三者缺一不可 */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae nisi in nemo obcaecati labore voluptate ea maxime sapiente hic incidunt at accusamus repellendus recusandae natus debitis, inventore ratione vero! Reprehenderit!</div>
+    <div>
+        <p>
+            锄禾日当午 <span>hello world</span>
+        </p>
+    </div>
+    <div class="box1">
+        今天天气真不错
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis similique temporibus suscipit inventore sequi magnam eaque odio eum minus quod asperiores repudiandae aspernatur, nisi natus, et ea hic maxime tenetur?
+    </div>
+    
+</body>
+</html>

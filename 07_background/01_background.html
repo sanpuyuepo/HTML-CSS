@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景相关</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            /* 渐变可指定多个颜色，默认平均分布，可指定分布情况                                     */
+            background-image: linear-gradient(red, yellow);
+        }
+        .box2 {
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+            /* 
+            to left 
+            to right
+            to bottom
+            to top
+            xxxdeg deg:degree 度数
+            turn 表示圆
+            */
+
+            background-image: linear-gradient(to top,red, yellow);
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:;"></a>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        body {
+            font-size: 50px;
+        }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /* 
+                绝对定位：position: absolute;
+                    - 开启绝对定位后元素脱离文档流
+                    - 会改变元素性质，行内元素会变成块元素，块元素的高度由内容决定
+                    - 使元素提升层级
+                    - 相对于其包含块进行定位
+
+                绝对定位的包含块：
+                    离它最近的开启定位的祖先元素
+                    如果所有祖先元素都没有开启定位则根元素(html)为包含块
+
+             */
+            position: absolute;
+        }
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        .box4 {
+            width: 400px;
+            height: 400px;
+            background-color: tomato;
+        }
+        .box5 {
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box4">4
+        <div class="box5">5
+            <div class="box2">2</div>
+        </div>
+    </div>
+    <div class="box3">3</div>
+</body>
+</html>

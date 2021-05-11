@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear</title>
+    <link rel="stylesheet" href="../02CSS/reset.css">
+    <style>
+        div {
+            font-size: 50px;
+        }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            float: left;
+        }
+        .box2 {
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            float: right;
+        }
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /* 
+                box1浮动导致box3上移，可通过设置当前元素的clear属性
+                清楚浮动元素对当前元素产生的影响
+
+                clear: 
+                    - left 清除左浮元素对当前元素的影响
+                    - right 清除右浮元素对当前元素的影响
+                    - both 清除大的那一边
+
+                clear原理：
+                    设置clear后浏览器自动为元素添加一个外边距margin，
+                    使其位置不受其他元素影响
+
+            */
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <!-- <div class="box2">2</div> -->
+    <div class="box3">3</div>
+
+</body>
+</html>

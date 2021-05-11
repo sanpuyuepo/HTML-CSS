@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* font-face将服务器中的字体直接提供给用户使用 */
+        /* 存在的问题：1 加载速度 2 版权问题 */
+        @font-face {
+            /* 指定字体名字 */
+            font-family: 'myFont';
+            /* 指定服务器字体路径 */
+            src: url(./font/Slidefu-Regular-2.ttf);
+        }
+        p {
+            color: #bbffaa;
+            /* em: 相当于当前元素的一个font-size */
+            /* rem: 相当于根元素元素的一个font-size */
+            font-size: 40px;
+            /* font-family: 字体族(字体格式) */
+            /* serif 衬线字体 */
+            /* sans-serif 非衬线字体 */
+            /* monospace 等宽字体 */
+            /* font-family可指定多个字体 */
+            /* font-family: 'Microsoft YaHei', 'Courier New', Courier, monospace,serif; */
+            font-family: 'myFont';
+        }
+        div {
+            /* 字体的简写属性
+                font 设置字体相关所有属性
+                语法：一定遵循以下顺序：
+                    字体大小、字体族必须在最后且必须写
+                    font: font-weight font-style  font-size(/line-height) font-family 
+            */
+            border: 1px solid red;
+            font: bold italic 40px/3 'Courier New', Courier, monospace,serif;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>锄禾日当午 hello world</p>
+    <div>锄禾日当午 hello world</div>
+</body>
+</html>

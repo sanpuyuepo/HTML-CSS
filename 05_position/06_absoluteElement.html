@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位元素</title>
+    <style>
+         .box1 {
+            width: 500px;
+            height: 500px;
+            background-color: #bbffaa;
+            position: relative;
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            
+            /* 
+                开启绝对定位后水平方向布局等式添加left、right两个值
+                发生过渡约束时且没有auto时自动调整right值以满足等式
+                否则调整auto值以满足等式
+
+                - 可设auto的值：margin width left right 
+                - left和right默认值是auto
+
+                垂直方向同理
+
+             */
+            margin: auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

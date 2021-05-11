@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动的特点</title>
+    <link rel="stylesheet" href="../02CSS/reset.css">
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            /* 
+                浮动元素不会盖住文字，文字会自动环绕在浮动元素周围
+                可以利用浮动设置文字环绕图片的效果
+            */
+            float: left;
+        }
+        .box2 {
+            background-color: yellowgreen;
+            /* 
+                元素设置浮动后从文档流脱离
+                脱离文档流的元素特点：
+                - 块元素不再独占一行，宽度和高度被内容撑开
+                - 行内元素会变成块元素
+             */
+            float: left;
+        }
+        .s {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus ab recusandae iste natus adipisci sed labore esse quam animi cupiditate, rem earum atque velit facere unde obcaecati repellendus magni.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus ab recusandae iste natus adipisci sed labore esse quam animi cupiditate, rem earum atque velit facere unde obcaecati repellendus magni.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus ab recusandae iste natus adipisci sed labore esse quam animi cupiditate, rem earum atque velit facere unde obcaecati repellendus magni.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus ab recusandae iste natus adipisci sed labore esse quam animi cupiditate, rem earum atque velit facere unde obcaecati repellendus magni.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus ab recusandae iste natus adipisci sed labore esse quam animi cupiditate, rem earum atque velit facere unde obcaecati repellendus magni.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus ab recusandae iste natus adipisci sed labore esse quam animi cupiditate, rem earum atque velit facere unde obcaecati repellendus magni.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus ab recusandae iste natus adipisci sed labore esse quam animi cupiditate, rem earum atque velit facere unde obcaecati repellendus magni.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus ab recusandae iste natus adipisci sed labore esse quam animi cupiditate, rem earum atque velit facere unde obcaecati repellendus magni.</p>
+
+    <div class="box2">hello</div>
+    <span class="s">wo shi yi ge span</span>
+</body>
+</html>

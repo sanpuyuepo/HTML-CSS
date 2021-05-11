@@ -1,0 +1,16 @@
+.box1 {
+  background-color: #bbffaa;
+}
+.box1 .box2 {
+  background-color: #ffff00;
+}
+.box1 .box2 .box4 {
+  border: 1px solid red;
+}
+.box1 .box3 {
+  background-color: orange;
+}
+.box5 {
+  width: 100px;
+  color: #bbffaa;
+}

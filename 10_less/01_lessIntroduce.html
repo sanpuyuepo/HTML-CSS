@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS预处理-Less简介</title>
+    <style>
+        html {
+            /* css原生也支持变量设置: 兼容性不太好 */
+            --color: #d46376;
+        }
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: var(--color);
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            color: var(--color);
+        }
+        .box3 {
+            width: 100px;
+            height: 100px;
+            border: 10px solid var(--color);
+        }
+    </style>
+</head>
+<body>
+    <!-- less CSS的预处理语言
+        CSS的增强版，可以编写更少的代码实现更强大的样式 
+     -->
+     <div class="box1">aaa</div>
+     <div class="box2">aaa</div>
+     <div class="box3">aaa</div>
+
+</body>
+</html>

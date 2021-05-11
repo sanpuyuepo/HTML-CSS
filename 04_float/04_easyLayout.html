@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单布局</title>
+    <link rel="stylesheet" href="../02CSS/reset.css">
+    <style>
+        header, main, footer {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            height: 100px;
+            background-color: silver;
+        }
+        main {
+            margin: 10px auto;
+            height: 500px;
+            background-color: #bbffaa;
+        }
+        nav {
+            width: 150px;
+            background-color: yellow;
+        }
+        article {
+            width: 600px;
+            background-color: yellowgreen;
+            margin: 0 10px;
+        }
+        aside {
+            width: 230px;
+            background-color: orange;
+        }
+        nav, article, aside {
+            float: left;
+            height: 100%;
+        }
+        footer {
+            height: 100px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <header></header>
+    <!-- 主体 -->
+    <main>
+        <nav></nav>
+        <article></article>
+        <aside></aside>
+    </main>
+    <!-- 底部 -->
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .s1 {
+            background-color: yellow;
+            /* 行内元素的盒模型
+                - 不支持设置高度和宽度，下列高度和宽度设置是无效的
+                - 支持设置内边距、边框、外边距， 但在垂直方向上不会影响布局
+            */
+            width: 100px;
+            height: 100px;
+
+            /* padding: 100px; */
+            /* border: 50px solid red; */
+            margin: 100px;
+            
+        }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+        }
+        a {
+            /* 
+                display 设置元素显示的类型
+                    - 可选值：
+                        - inline: 将元素设置为行内元素
+                        - block: 将元素设置为块元素
+                        - inline-block: 将元素设置为行内块元素，可设置高度和宽度同时不会独占一行
+                        - table: 将元素设置为表格
+                        - none: 隐藏一个元素
+             */
+            /* display: none; */
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            /*
+                visibility 设置元素显示状态
+                    - 可选值：
+                        - visible 默认值，正常显示
+                        - hidden 元素隐藏不显示但依然占据页面的位置
+             */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="javascript:;">超链接</a>
+    <a href="javascript:;">超链接</a>
+    <span class="s1">wo shi span</span>
+    <span class="s1">wo shi span</span>
+   
+    <div class="box1"></div>
+</body>
+</html>

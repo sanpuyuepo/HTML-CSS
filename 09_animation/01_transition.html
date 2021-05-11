@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box1 {
+            width: 800px;
+            height: 800px;
+            background-color: silver;
+            overflow: hidden;
+        }
+        .box1 div {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 100px;  
+            margin-left: 0;    
+        }
+        .box2 {
+            background-color: #bbffaa; 
+            /* 过渡
+                - 指定属性发生变化时的切换方式
+                - 属性：
+                    - transition-property: 
+                        指定要执行过渡效果的属性，多个属性逗号隔开，当所有属性都需要过渡则使用all关键字，可计算（有效数值）的属性都可使用过渡
+                    - trasnition-duration: 
+                        指定执行过渡效果的时间，s/ms
+                    - transition-delay: 
+                        指定延迟多久开始过渡，
+                    - transition-timing-function: 过渡时序函数，指定过渡的执行方式
+                        - ease：默认值，慢速开始加速减速
+                        - linear 线性，匀速过渡
+                        - ease-in 加速过渡
+                        - ease-out 减速过渡
+                        - https://cubic-bezier.com: 贝赛尔曲线
+             */
+            transition: all 2s; 
+        }
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box1:hover div {
+            margin-left: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

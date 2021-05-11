@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奔跑的少年</title>
+    <style>
+        body {
+            background-color: #eeeeee;
+        }
+        .box1, .box2 {
+            width: 108px;
+            height: 140px;
+            background-color: #ffffff;
+        }
+
+        .box1 {
+            margin: 0 auto;
+            background-image: url(./img/scottpilgrim_multiple.png);
+            animation: run 1s steps(8) infinite;
+        }
+
+        @keyframes run {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -864px 0;
+            }
+        }
+
+        .box2 {
+            margin: 10px auto;
+            background-image: url(./img/scottpilgrim_multiple.png);
+            animation: runVerse 1s steps(8) infinite;
+        }
+        @keyframes runVerse {
+            from {
+                background-position: -864px 140px;
+            }
+            to {
+                background-position: 0 140px;
+            }
+        }
+        .box1:hover, .box2:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

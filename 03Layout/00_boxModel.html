@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        标准盒模型
+        IE盒模型
+     -->
+    <div class="box1">
+        标准盒模型：
+        <br> 
+        设置的高宽=内容区的高宽</div>
+    <br>
+    <div class="box2">
+        IE盒模型: 
+        <br>
+        设置的高宽=内容区+内边距+边框的高宽
+    </div>
+</body>
+</html>
+<style>
+    .box1 {
+        width: 400px;
+        height: 200px;
+        background-color: lightgreen;
+        border: red 10px solid;
+        padding: 10px;
+        /* 
+        默认情况下，盒子可见框的大小由内容区+内边距+边框决定
+        box-sizing: 设置盒子尺寸的计算方式（设置width和height的作用）
+            - 可选值：
+                标准盒模型： content-box 默认值，高度和宽度设置内容区的大小
+                IE盒模型：border-box 高度和宽度设置整个盒子可见框的大小: 内容区+内边距+边框
+         */
+        box-sizing: content-box;
+
+    }
+    .box2 {
+        width: 400px;
+        height: 200px;
+        background-color: lightgreen;
+        border: red 10px solid;
+        padding: 10px;
+        /* 
+        默认情况下，盒子可见框的大小由内容区+内边距+边框决定
+        box-sizing: 设置盒子尺寸的计算方式（设置width和height的作用）
+            - 可选值：
+                标准盒模型： content-box 默认值，高度和宽度设置内容区的大小
+                IE盒模型：border-box 高度和宽度设置整个盒子可见框的大小: 内容区+内边距+边框
+         */
+        box-sizing: border-box;
+
+    }
+</style>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <!-- 外部样式表 link标签引入，可以用到浏览器的缓存机制，加快网页加载速速，提高用户体验-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 
+        不推荐使用内联样式（行内样式）：只对一个标签生效，不方便维护
+     -->
+    <h1>这是个题目</h3>
+    <p>少小离家老大回，乡音无改鬓毛衰</p>
+    <p id="bird">落霞与孤鹜齐飞，秋水共长天一色</p>
+    <p class="green">落霞与孤鹜齐飞，秋水共长天一色</p>
+    <p class="green">后面的我也记不住了</p>
+    <div class="green">
+        我是个div
+    </div>
+
+</body>
+</html>
+
+<!-- 内部样式表 -->
+<style>
+    /* 元素选择器 */
+    p {
+        color: red;
+        font-size: 40px;
+    }
+    /* id 选择器 */
+    #bird {
+        color: blue;
+    }
+    /* 类选择器 */
+    .green {
+        color: chartreuse;
+    }
+    /* 复合选择器 */
+    div.green {
+        color: darkgoldenrod;
+        font-size: xx-large;
+    }
+</style>

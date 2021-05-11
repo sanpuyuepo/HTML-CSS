@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图标字体</title>
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <style>
+        li {
+            list-style: none;
+        }
+        ul li::before {
+            /* 通过伪元素设置图标字体 */
+            /* 1 通过before或者after */
+            /* 2 content中设置字体编码 */
+            /* 3 设置字体样式:
+                fas:
+                font-family: 'Font Awesome 5 Free'; 
+                fab:
+                font-family: 'Font Awesome 5 Brands';
+            */
+            content: '\f5d2';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            margin-right: 10px;
+            color: #bbffaa;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        将图标设置为字体
+        通过font-face引入图标字体，以字体形式使用图标
+        
+        fontawesome  
+            下载解压将css和webfonts放到项目中
+            将all.css引入到网页
+            使用：
+                - 通过类名使用 class="fas fa-bell"
+                - 
+     -->
+     <i class="fas fa-restroom"></i>
+     <i class="fas fa-camera"></i>
+     <i class="fas fa-plus"></i>
+     <i class="fas fa-edit"></i>
+
+    <ul>
+        <li>锄禾日当午</li>
+        <li>汗滴禾下土</li>
+        <li>谁知盘中餐</li>
+        <li>粒粒皆辛苦</li>
+    </ul>
+
+    <!-- 通过实体使用图标字体
+        使用方法：fas &#x图标字体编码
+     -->
+    <span class="fas">&#xf5d1</span>
+</body>
+</html>

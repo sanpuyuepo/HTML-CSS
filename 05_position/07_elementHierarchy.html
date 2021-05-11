@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素层级</title>
+    <style>
+        body {
+            font-size: 50px;
+            height: 2000px;
+        }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            position: absolute;
+            /*
+            开启定位的元素，可通过z-index属性指定元素层级
+            - z-index属性值为整数，值越大层级越高越有限显示
+            - 层级一样的时候显示最后一个元素
+            - 祖先元素永远不会盖住后代元素：父爱无边
+             */
+            z-index: 1;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 0, 0, .3);
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 3;
+        }
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

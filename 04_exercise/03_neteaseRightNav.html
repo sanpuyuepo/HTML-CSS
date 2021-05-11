@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetEase</title>
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <div class="news-wrapper">
+        <h2 class="title">
+            <a href="">体育</a>
+        </h2>
+        <div class="newsImg">
+            <a href=""><img src="./source/img/news.webp" alt="中超保级组">
+                <h3 class="img-title" >中超保级组：黄海0-0闷平富力</h2>
+            </a>
+            
+        </div>
+        <ul class="right-nav">
+            <li><a href="">海归神兽补齐辽篮最大短板</a></li>
+            <li><a href="">7-2虐利物浦后 又1-0绝杀!英超唯一全胜队</a></li>
+            <li><a href="">埃弗顿VS利物浦: 一桩事后张扬的凶杀案</a></li>
+            <li><a href="">埃弗顿和安切洛蒂的野望</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+<style>
+    body {
+        background-color: antiquewhite;
+    }
+    .news-wrapper {
+        margin: 50px auto;
+        width: 300px;
+        height: 320px;
+        border-top: 1px solid #ddd;
+        background-color: white;
+        
+    }
+    .title {
+        display: inline;
+        height: 40px;
+        font-weight: bold;
+        padding-top: 7px;
+        border-top: 1px solid red;
+        margin-top: -1px;
+    }
+    .img-title {
+        margin-top: -30px;
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 30px;
+        color: #ffffff;
+    }
+    .right-nav {
+        margin-top: 12px;
+    }
+    .right-nav li {
+        padding-left: 10px;
+        height: 30px;
+
+    }
+    .right-nav li::before {
+        content: '■';
+        color: rgb(218, 218, 218);
+        font-size: 12px;
+        margin-right: 6px;
+    }
+    .title a, .right-nav li a {
+        color: black;
+    }
+    .title a:hover, .right-nav li a:hover {
+        color: #c81632;
+    }
+
+</style>
